@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+body {
+  font-family: 'Muli', sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  line-height: 1.58;
+  letter-spacing: -.003em;
+  font-size: 20px;
+  /* padding: 70px; */
+  /* background: rgb(63,61,96); */
+/* background: linear-gradient(90deg, rgba(63,61,96,1) 0%, rgba(50,116,90,1) 0%, rgba(0,245,255,1) 100%); */
+  background: rgb(43, 43, 43) !important;
+
+}
+
+h1 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 38px;
+  line-height: 1.15;
+  letter-spacing: -.02em;
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-font-smoothing: antialiased;
+}
+
+#my-navbar {
+  background: transparent !important;
+  border-bottom: 1px solid gray;
+  box-shadow: 1px 1px;
+  display: block;
+}
+
+.black{
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: #000;
+}
+
+.white{
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid  black; 
+}
+
+.red{
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: red;
+  border: 1px solid  black;
+}
+
+.silver{
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: gray;
+  border: 1px solid  black; 
+}
+
+.blue{
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background-color: blue;
+  border: 1px solid  black; 
+}
+
+.card-img-top{
+  width: 80% !important;
+  margin: 0 auto;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card-img-search{
+  width: 100% !important;
+  margin: 0 auto;
+  height: 300px;
+  object-fit: contain;  
+}
+
+.form-select{
+  width: 180px !important;
+}
+
+.row {
+  width: 90% !important;
+  margin: 0px auto !important;
+  align-items: center !important;
+  text-align: center !important;
+  display: flex;
+  justify-content: center;
+}
+
+.card{
+  border: 1px solid gray !important;
+  box-shadow: 2px 1px;
+  margin: 10px 8px !important;
+  /* background-color: transparent !important; */
+}
+
+
+.card:hover{
+  /* zoom: 1.2; */
+  transform: scale(1.1);
+  transition: 0.5s all ease-in-out;
+}
+.navbar-brand{
+  font-weight: 800 !important;
+  color: white !important;
+  margin-left: 6%;
+}
+
+.Allbtn{
+  margin-right: 6% !important;
+}
+
+.navbar-toggler{
+  background-color: white !important;
+}

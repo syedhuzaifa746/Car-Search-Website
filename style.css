@@ -7,22 +7,8 @@ body {
   line-height: 1.58;
   letter-spacing: -.003em;
   font-size: 20px;
-  /* padding: 70px; */
-  /* background: rgb(63,61,96); */
-/* background: linear-gradient(90deg, rgba(63,61,96,1) 0%, rgba(50,116,90,1) 0%, rgba(0,245,255,1) 100%); */
   background: rgb(43, 43, 43) !important;
 
-}
-
-h1 {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
-  font-style: normal;
-  font-size: 38px;
-  line-height: 1.15;
-  letter-spacing: -.02em;
-  color: rgba(0, 0, 0, 0.8);
-  -webkit-font-smoothing: antialiased;
 }
 
 #my-navbar {
@@ -102,10 +88,7 @@ h1 {
   border: 1px solid gray !important;
   box-shadow: 2px 1px;
   margin: 10px 8px !important;
-  /* background-color: transparent !important; */
 }
-
-
 .card:hover{
   /* zoom: 1.2; */
   transform: scale(1.1);
@@ -116,11 +99,132 @@ h1 {
   color: white !important;
   margin-left: 6%;
 }
-
 .Allbtn{
   margin-right: 6% !important;
 }
-
 .navbar-toggler{
   background-color: white !important;
+}
+
+/* Neepal */
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  list-style: none !important;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+nav{
+  background: #0082e6;
+  height: 80px;
+  width: 100%;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  margin-bottom: 10px;
+}
+.main{
+  z-index: 1;
+  min-height: 1200px;
+  margin-top: 100px  !important;
+  padding-top: 100px  !important;
+  position: relative;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+  z-index: 2;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a select{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a select.active,a select:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a select{
+    font-size: 16px;
+  }
+}
+@media (max-width: 901px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    /* background-color: red; */
+    margin: 50px auto;
+
+    line-height: 30px;
+  }
+  .form-select{
+    background-color: transparent !important;
+    color: white !important;
+  }
+  .form-select:hover{
+    background-color: white !important;
+    color: black;
+  }
+  nav ul li a select{
+    font-size: 20px;
+  }
+  a select:hover,a select.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
 }
